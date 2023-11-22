@@ -9,7 +9,9 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff9e6; /* Yellow background color */
+      background-image: url('https://th.bing.com/th/id/R.7c49c1eb8fb425b6a02c65b7c9119d80?rik=3mqGBkhhrZWCqA&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f45%2f91%2fWTF0EG.jpg&ehk=pXDTkSu4JMfztvqnMcHEJlg40%2bP5ryv28LdMISnNa%2f4%3d&risl=&pid=ImgRaw&r=0'); /* Replace with the path to your background photo */
+      background-size: cover;
+      background-position: center;
       color: #333; /* Text color */
       display: flex;
       align-items: center;
@@ -21,7 +23,7 @@
       max-width: 400px;
       width: 100%;
       padding: 20px;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.8);
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -29,6 +31,11 @@
     h2 {
       color: #333; /* Dark text color for headings */
       text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 20px; /* Center the image and add margin below */
     }
 
     label {
@@ -71,6 +78,7 @@
 <body>
 
   <form>
+    <img src="C:\Users\Asus\Downloads\_Software Design and Architecture project.png" alt="RouteMate Logo" width="90">
     <h2>Login to RouteMate</h2>
 
     <label for="username">Username:</label>
@@ -78,11 +86,17 @@
 
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required>
-
-    <button type="submit" onclick="alert('Login functionality coming soon!')">Login</button>
+    <button type="submit" class="login-button" onclick="redirectToBooking()">Login</button>
+    
 
     <p>Don't have an account? <a href="#">Sign up</a></p>
   </form>
-
+  
+<script>
+    function redirectToBooking() {
+     
+      window.location.href = '2.html';
+    }
+  </script>
 </body>
 </html>
